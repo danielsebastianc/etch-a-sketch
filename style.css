@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.grid {
+    display: flex;
+    gap: 1px;
+}
+
+.grid-child {
+    flex-shrink: 0;
+    background-color: coral;
+    width: 50px;
+    height: 50px;
+}

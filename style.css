@@ -1,22 +1,46 @@
 body {
     text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
+    justify-content: center;
 }
 
 .grid {
     display: flex;
-    gap: 1px;
+    flex-wrap: wrap;
 }
 
 .grid-child {
-    flex-shrink: 0;
     background-color: coral;
+    box-sizing: border-box;
+    border: 1px solid white;
     width: 50px;
     height: 50px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.grid-btn {
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 8px 12px;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 24px;
+    font-weight: 600;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.grid-btn:hover {
+    background-color: black;
+    color: white;
 }

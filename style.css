@@ -11,10 +11,10 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid black;
 }
 
 .grid-child {
-    background-color: coral;
     box-sizing: border-box;
     border: 1px solid white;
 }

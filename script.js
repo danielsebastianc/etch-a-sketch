@@ -18,6 +18,23 @@ randomColorBtn.addEventListener("mouseleave", ()=>{
     randomColorBtn.style.backgroundColor = "white"
 })
 
+resetBtn.addEventListener("mouseenter", ()=>{
+    resetBtn.style.backgroundColor = "#C23B22"
+})
+
+resetBtn.addEventListener("mouseleave", ()=>{
+    resetBtn.style.backgroundColor = "white"
+})
+
+changeGridBtn.addEventListener("mouseenter", ()=>{
+    changeGridBtn.style.backgroundColor = "#8FBC8F"
+    changeGridBtn.style.color = "black"
+})
+
+changeGridBtn.addEventListener("mouseleave", ()=>{
+    changeGridBtn.style.backgroundColor = "white"
+})
+
 resetBtn.addEventListener("click", ()=>{
     container.removeChild(container.firstChild)
     createGridBox(size, currentColorMode)

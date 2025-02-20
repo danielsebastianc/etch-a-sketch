@@ -2,6 +2,7 @@ const container = document.querySelector(".container")
 const changeGridBtn = document.querySelector("#change-grid")
 const randomColorBtn = document.querySelector("#random-color")
 const blackBtn = document.querySelector("#black")
+const resetBtn = document.querySelector("#reset")
 
 const width = 800
 const height = 800
@@ -15,6 +16,11 @@ randomColorBtn.addEventListener("mouseenter", ()=>{
 
 randomColorBtn.addEventListener("mouseleave", ()=>{
     randomColorBtn.style.backgroundColor = "white"
+})
+
+resetBtn.addEventListener("click", ()=>{
+    container.removeChild(container.firstChild)
+    createGridBox(size, currentColorMode)
 })
 
 changeGridBtn.addEventListener("click", ()=>{
